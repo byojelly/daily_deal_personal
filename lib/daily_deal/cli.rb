@@ -15,6 +15,7 @@ class DailyDeal::CLI
             1. this device
             2. that device
          DOC
+    @deal = DailyDeal::Deal.today
   end
   def menu
     input = nil
