@@ -1,0 +1,32 @@
+In terminal type
+bundle gem name_of_project
+this will create the folder structure you want
+
+You want to start your programming with a shell of what the cli should do (with out the smarts in the background) then you can refine the scraping and advanced methods in the background
+
+
+The Bin exeucatble file needs the below line of code so that the program knows to read the code as ruby
+        #!/usr/bin/env ruby
+
+the bin should contain an executable file that the user essentially interracts with
+you can lookup the file permissions of the file by typing below into editor:
+        ls -lah
+        #more permissions
+        https://support.rackspace.com/how-to/checking-linux-file-permissions-with-ls/
+
+when you review the permissions :
+        r = read
+        w = write
+        x - execuctable
+
+if your executable file does not contain x, then it is more difficult for the user to directly call the program from the cli prompt
+to give executabel permission to the file you must type the following in terminal:
+        chmod +x daily-deal
+        #above daily-deal is the name of the executable file
+        # after the change you can now execute the file by typing the below text directly into terminal:
+            ./bin/daily-deal
+        #this teaches our operating system how to interpeate ruby (using the shabing header line)
+
+setup the bones - methods call, list, menu, goodby
+--------------------------------
+then setup the higher thinking of your code

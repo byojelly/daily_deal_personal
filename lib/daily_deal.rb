@@ -1,5 +1,8 @@
-require "daily_deal/version"
+require_relative "daily_deal/version"
 
-module DailyDeal
+#the below code can be commented (deleted out) becayse the other code acts as the code that links everything together
+#module DailyDeal
   # Your code goes here...
-end
+#end
+
+require_relative './daily_deal/cli'
