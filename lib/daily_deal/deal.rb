@@ -4,10 +4,12 @@ attr_accessor :name, :price, :availability, :url
 # Class method
   def self.today
     # i should return a bunch of deals
-    puts <<-DOC.gsub /^\s*/, ''
-            3. this device
-            4. that device
-         DOC
+
+#we now comment out the below and then copy the reuire code in console and copy that to daily-deal under bin
+    #puts <<-DOC.gsub /^\s*/, ''
+    #        3. this device
+    #        4. that device
+    #     DOC
     deal_1 = self.new
     deal_1.name = "PCH Digital Pulse Manager"
     deal_1.price = "27"

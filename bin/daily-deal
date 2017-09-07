@@ -2,7 +2,8 @@
 
 #the above line of code is added because this file was not made as a ruby.rb file.  the above code lets the proceeding text be ready as Ruby
 
-require './lib/daily_deal'
+require "bundler/setup"
+require "daily_deal"
 #above sets up a load dependency which requires a specific file
 
 DailyDeal::CLI.new.call
