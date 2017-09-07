@@ -30,3 +30,21 @@ to give executabel permission to the file you must type the following in termina
 setup the bones - methods call, list, menu, goodby
 --------------------------------
 then setup the higher thinking of your code
+-----------
+when running in terminal  ./bin/console for first time after setting up the deal.rb (under lib folder and daily_deal folder) i received the following error
+              Bundler could not find compatible versions for gem "bundler":
+                In Gemfile:
+                  bundler (~> 1.15)
+
+                Current Bundler version:
+                  bundler (1.11.2)
+              This Gemfile requires a different version of Bundler.
+              Perhaps you need to update Bundler by running `gem install bundler`?
+
+              Could not find gem 'bundler (~> 1.15)' in any of the sources
+To fix this i had to open the daily_deal.gemspec file and change
+                spec.add_development_dependency "bundler", "~> 1.15"
+to
+                spec.add_development_dependency "bundler", "~> 1.11.2"
+
+after this change the terminal accepted ./bin/console

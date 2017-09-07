@@ -6,7 +6,7 @@ require "daily_deal/version"
 Gem::Specification.new do |spec|
   spec.name          = "daily_deal"
   spec.version       = DailyDeal::VERSION
-  spec.authors       = ["TODO: Write your name"]
+  spec.authors       = ["BYOJELLY"]
   spec.email         = ["<github email address>"]
 
   spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.15"
+  spec.add_development_dependency "bundler", "~> 1.11.2"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
 end
