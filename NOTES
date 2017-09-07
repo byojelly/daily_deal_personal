@@ -48,3 +48,13 @@ to
                 spec.add_development_dependency "bundler", "~> 1.11.2"
 
 after this change the terminal accepted ./bin/console
+
+----------------------
+at the scraping coding point we had to add additional dependencies in daily_deal.gemspec at bottom
+in addition we have to require 'nokogiri' and require 'pry' in the lib folder daily_deal.rb file to have the dependencies come through
+------
+to fix this error in daily_deal.gemspec
+      The gemspec at /home/alex/code/daily_deal/daily_deal.gemspec is not valid. Please fix this gemspec.
+      The validation error was '"FIXME" or "TODO" is not a description'
+had to update the below summary and description with quoted content
+--------------------

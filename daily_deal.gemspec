@@ -9,8 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["BYOJELLY"]
   spec.email         = ["<github email address>"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+#had to update the below summary and description with quoted content
+  spec.summary       = "Short summary"
+  spec.description   = "Short description"
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
 
@@ -30,7 +31,12 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.11.2"
+  spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "rspec", "~> 3.0"
+  #based on code along the specific version of the rspec was not there so commented out
+  spec.add_development_dependency "rspec"#, "~> 3.0"
+  #below was added during code along
+  spec.add_development_dependency "pry"
+  spec.add_dependency "nokogiri"
+
 end

@@ -12,3 +12,5 @@ require "daily_deal"
 
 require "irb"
 IRB.start
+
+#this setup basically starts an irb session to mess around with your work
